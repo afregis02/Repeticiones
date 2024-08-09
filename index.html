@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeticiones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        form, div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #resultado {
+            font-weight: bold;
+            white-space: pre-wrap; 
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>1. Suma de Números Impares del 1 al 100</h2>
+        <button type="button" onclick="sumaImpares()">Calcular</button>
+        <div id="resultado-suma-impares" class="hidden"></div>
+    </div>
+
+    <div>
+        <h2>2. Imprimir Asteriscos</h2>
+        <label for="cantidad">Número de Asteriscos:</label>
+        <input type="text" id="cantidad">
+        <button type="button" onclick="imprimirAsteriscos()">Mostrar Asteriscos</button>
+        <div id="resultado-asteriscos" class="hidden"></div>
+    </div>
+
+    <div>
+        <h2>3. Tablas de Multiplicar del 1 al 10</h2>
+        <button type="button" onclick="mostrarTablas()">Mostrar Tablas</button>
+        <pre id="resultado-tablas" class="hidden"></pre>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
